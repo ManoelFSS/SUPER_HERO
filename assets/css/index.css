@@ -6,6 +6,13 @@
     font-weight: 600;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+}
+
 body::-webkit-scrollbar{
     width: 5px;
 }
@@ -19,20 +26,34 @@ body::-webkit-scrollbar-thumb {
 
 header {
     height: 100vh;
+    width: 80%;
+    box-shadow: 0px -45px 100px #1eff00;
+    position: relative;
+    z-index: 99;
 }
 
 header .banner {
-    background:url("../images/spidermanheader.jpg") no-repeat center right / 100% 100%;
+    background:url("../images/spidermanheader.jpg") no-repeat center  / 100% 100%;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width:601){
+    header .banner {
+        height: 50%;
+        background:url("../images/images_mobile/spidermanheader_mobile.jpg") no-repeat center right  / 100% 100%;
+    }
 }
 
 .nav_bar{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding: 20px 0px 15px 30px;
     gap: 8%;
 }
+
+
 
 .nav_bar img {
     width: 140px;
@@ -43,6 +64,7 @@ header .banner {
     display: flex;
     list-style: none;
     gap: 50px;
+    padding-right: 20px;
 }
 .nav_bar .list-items li{
     display: flex;
@@ -66,6 +88,7 @@ header .banner {
     width: 55px;
 }
 
+
 .nav_bar .list-items li a {
     text-decoration: none;
     display: block;
@@ -84,100 +107,176 @@ header .banner {
 }
 
 .banner_container_text img {
-    width: 18vw;
-    height: 35vh;
+    width: 15vw;
+    height: 30vh;
 }
 
 
+@media (max-width:550px){
+    .nav_bar{
+        justify-content: center;
+    }
+    .nav_bar .list-items{
+        padding-top: 10px;
+    }
+}
 
+main {
+    width: 80%;
+    box-shadow: 0px -30px 100px #1eff00;
+   
+}
 
 
 
 .infor_sobre {
-    background: url("../images/thor_header.jpg") no-repeat left center / 100% 100%, url("../images/thor_header.jpg") no-repeat center right / 170% 100% ;
+    background: url("../images/thor_header.jpg") no-repeat left center / 100% 100%;
     height: 100vh;
-}
-
-.infor_title {
     width: 100%;
-    height: 140px;
+}
+
+.infor_sobre .infor_title {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 180px;
+
 }
 
-.infor_title h3 {
+.infor_sobre .infor_title div  {
     display: flex;
     justify-content: center;
-    min-width: 200px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: 900;
-}
-
-.infor_title  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 70px;
-    border-bottom: solid #fff 3px;
+    border-bottom: solid 3px #fff;
 }
 
-
-
-
-
-
-.infor_paragrafo {
+.infor_sobre .infor_title div h3 {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-.infor_paragrafo p {
-    width: 50%;
-    padding: 55px;
-    font-size: 16px;
+    justify-content: center;
+    min-width: 160px;
+    padding: 5px;
     color: #fff;
-    line-height: 28px;
-}
-
-.info_catalogo {
-    background-color: #fff;
-    color: black;
-    height: 100vh;
-}
-
-.info_catalogo .infor_title div {
-    border-bottom: solid 3px #fe7467;
-}
-
-.info_catalogo h3 {
-    color: #000;
     font-weight: 900;
-}
-
-.info_catalogo img {
-    /* width: 300px; */
-    height: 65vh;
-}
-
-.info_catalogo p {
-    color: #000;
-    line-height: 30px;
-}
-
-.info_catalogo p a {
-    padding: 10px 20px;
-    text-decoration: none;
     text-transform: uppercase;
-    background: linear-gradient(180deg, #fe7467, #fc3836);
-    display: block;
-    width: 170px;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: 900;
-    margin-top: 20px;
-    cursor: pointer;
 }
+
+.infor_sobre .infor_paragrafo {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 180px);
+    position: relative;
+}
+
+.infor_sobre .infor_paragrafo div {
+    max-width: 50%;
+    min-width: 300px;
+    height: 100%;
+    padding: 30px 40px 40px 40px;
+    position: absolute;
+    right: 0;
+}
+
+.infor_sobre .infor_paragrafo div p {
+    /* font-size: clamp(1vw,1.3vw + 1.2vw,1.3em); */
+    font-size: 1em;
+    color: #fff;
+}
+
+@media (max-width:1028px){
+    
+    .infor_sobre .infor_paragrafo div {
+        padding: 30px 20px 40px 10px;
+    }
+}
+
+@media (max-width:898px){
+    
+    .infor_sobre .infor_paragrafo div {
+        padding: 10px 10px 10px 10px;
+    }
+    .infor_sobre .infor_paragrafo div p {
+        font-size: clamp(1vw,1.5vw + 1.4vw,0.9em);
+    }
+
+
+}
+
+@media (max-width:769px){
+    main{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    header .banner{
+        background:url("../images/images_mobile/spidermanheader_mobile.jpg") no-repeat center  / 100% 100%;
+    }
+
+    .infor_sobre .infor_paragrafo{
+        justify-content: center;
+    }
+   
+    .infor_sobre .infor_paragrafo div {
+       min-width: 100%;
+       padding: 0px 20px;
+    }
+
+    .infor_sobre {
+        background: linear-gradient(45deg, #fc3836, #fe7467 );
+    }
+
+    .banner_container_text img {
+        width: 39vw;
+        height: 34vh;
+        margin-left: 60px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:600px){
+ 
+
+    .banner_container_text{
+        height: 70%;
+    }
+
+    .banner_container_text img {
+        width: 35vw;
+        height: 35vh;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+   
+}
+@media (min-width:481px) and (max-width:769px){
+    .infor_sobre .infor_paragrafo div p {
+        font-size: clamp(1vw,4vw + 2vw,1.1em);
+        line-height: 20px;
+        text-transform: capitalize;
+    }
+}
+
+@media (min-width:270px) and (max-width:480px){
+    .infor_sobre .infor_paragrafo div {
+        padding: 0px 20px;
+    }
+    .infor_sobre .infor_paragrafo div p {
+        font-size: clamp(1vw,3vw + 1vw,1em);
+        line-height: 20px;
+        text-transform: capitalize;
+    }
+    .banner_container_text{
+        height: 80%;
+    }
+    .banner_container_text img {
+        width: 39vw;
+        height: 34vh;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+}
+
+
