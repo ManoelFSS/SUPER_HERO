@@ -43,12 +43,6 @@ header .banner {
     height: 100%;
 }
 
-@media (max-width:601){
-    header .banner {
-        height: 50%;
-        background:url("../images/images_mobile/spidermanheader_mobile.jpg") no-repeat center right  / 100% 100%;
-    }
-}
 
 @media (max-width:770px){
     main, header {
@@ -118,8 +112,8 @@ header .banner {
 }
 
 .banner_container_text img {
-    width: 15vw;
-    height: 30vh;
+    width: 18vw;
+    height: 35vh;
 }
 
 @media (max-width:550px){
@@ -231,12 +225,27 @@ header .banner {
     background: linear-gradient(180deg, #fe7467, #fc3856) ;
 }
 
-
-
-
 @media (max-width:530px){
     header {
         box-shadow:none;
+    }
+
+    header .banner {
+        background:url("..//images/images_mobile/spidermanheader_mobile.jpg") no-repeat center  / 100% 100%;
+    }
+    .nav_bar{
+       height:200px;
+       padding: 0;
+    }
+    .nav_bar #logo img {
+       height: 100px;
+       width: 200px;
+       padding-top: 20px;
+    }
+
+    .banner_container_text img {
+        width: 35vw;
+        margin-left: 20px;
     }
     .container_backgrond{
         background: linear-gradient(180deg,  #f38278 , #da445a );
@@ -251,7 +260,6 @@ header .banner {
         margin-bottom: 50px;
     }
 
-  
     .container_catalogo .catalogo_img {
       justify-content: center;
       height: 200px;
@@ -277,10 +285,6 @@ header .banner {
     .container_catalogo .infor_paragrafo p{
         padding: 0px 25px;
     }
-  
-   
-
- 
   
  
 }
