@@ -49,11 +49,15 @@ header .banner {
     cursor: pointer;
     border: solid 2px #ffffff;
 }
-.card:hover {
-    border-radius: 20px;
-    border: solid 2px #50505046;
-    box-shadow: 2px 4px 16px #3030308e;
+
+@media (min-width:500px) {
+    .card:hover {
+        border-radius: 20px;
+        border: solid 2px #50505046;
+        box-shadow: 2px 4px 16px #3030308e;
+    }
 }
+
 .card img {
     max-width: 390px;
     height: 300px;
