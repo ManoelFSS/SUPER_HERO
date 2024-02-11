@@ -73,7 +73,17 @@ form button {
     font-family: sans-serif;
 }
 
+
 @media (max-width:590px){
+
+    header .banner {
+        background:url("../../images/images_mobile/contatoheader_mobile.jpg") no-repeat center  / 100% 100%;
+    }
+
+    .banner_container_text img {
+        display: flex;
+     }
+
     .form_area{
         justify-content: center;
     }
@@ -89,3 +99,4 @@ form button {
         
     }
 }
+
