@@ -196,7 +196,7 @@ header .banner {
 }
 
 .catalogo_title h3::after {
-    border-bottom: solid #000;
+    border-bottom: solid #fc3856;
 }
 
 .container_catalogo .catalogo_img {
