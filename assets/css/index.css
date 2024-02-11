@@ -233,6 +233,7 @@ header .banner {
     header .banner {
         background:url("..//images/images_mobile/spidermanheader_mobile.jpg") no-repeat center  / 100% 100%;
     }
+
     .nav_bar{
        height:200px;
        padding: 0;
@@ -251,12 +252,15 @@ header .banner {
         background: linear-gradient(180deg,  #f38278 , #da445a );
         height: 40vh;
     }
+    .container_catalogo .infor_paragrafo p {
+        font-size: clamp(0.7em,1em + 1.4em,1vw);
+    }
 
     .container_backgrond .infor_paragrafo p {
         width: 100%;
         text-align: center;
         padding: 20px;
-        font-size: clamp(0.6em,1em + 1em,1vw);
+        font-size: clamp(0.7em,1em + 1em,1vw);
         margin-bottom: 50px;
     }
 
