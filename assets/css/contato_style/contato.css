@@ -73,17 +73,28 @@ form button {
     font-family: sans-serif;
 }
 
+@media (max-width:1290px){
+    .banner_container_text img {
+        display: flex;
+     }
+}
+
+@media (max-width:990px){
+ 
+    .banner_container_text img {
+        display: flex;
+        height: 150px;
+        width: 300px;
+        margin-bottom: 40px;
+     }
+
+}
 
 @media (max-width:590px){
 
     header .banner {
         background:url("../../images/images_mobile/contatoheader_mobile.jpg") no-repeat center  / 100% 100%;
     }
-
-    .banner_container_text img {
-        display: flex;
-        left: 0;
-     }
 
     .form_area{
         justify-content: center;
@@ -97,7 +108,18 @@ form button {
 
     form button {
         width: 260px;
-        
     }
 }
+
+@media (max-width:530px){
+    .banner_container_text{
+        min-height: calc(100vh - 200px);
+    }
+    .banner_container_text img {
+        max-width: 250px;
+        left: 10px;
+    }
+
+}
+
 
