@@ -43,14 +43,23 @@ header .banner {
 }
 .card{
     max-width: 390px;
-    height:500px ;
+    height:480px ;
+    transition: all 0.3s;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border: solid 2px #ffffff;
+}
+.card:hover {
+    border-radius: 20px;
+    border: solid 2px #50505046;
+    box-shadow: 2px 4px 16px #3030308e;
 }
 .card img {
-    width: 390px;
+    max-width: 390px;
     height: 300px;
 }
 .card a {
-   display: inline-block;
    margin-top: 10px;
 }
 

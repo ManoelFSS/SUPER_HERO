@@ -219,11 +219,18 @@ header .banner {
 }
 
 .container_catalogo a {
+    display: inline-block;
     text-decoration: none;
     padding: 10px 25px;
     color: #fff;
     border-radius: 10px;
     background: linear-gradient(180deg, #fe7467, #fc3856) ;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.container_catalogo a:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width:530px){
