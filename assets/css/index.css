@@ -171,7 +171,8 @@ header .banner {
 .container_backgrond .infor_paragrafo {
     justify-content: center;
     align-items: end;
-    height: calc(50vh - 100px);
+    min-height: calc(50vh - 100px);
+    padding-bottom: 30px;
 }
 
 .container_backgrond .infor_paragrafo p {
@@ -199,7 +200,7 @@ header .banner {
     flex: 1.1;
     display: flex;
     align-items: center;
-    height: calc(50vh - 100px);
+    min-height: calc(50vh - 100px);
 }
 .container_catalogo .catalogo_img img {
     width: 100%;

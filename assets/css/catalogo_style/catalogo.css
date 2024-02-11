@@ -25,7 +25,7 @@ header .banner {
     }
 }
 
-@media (max-width:530px) {
+@media (max-width:1200px) {
     header .banner {
         background:url("../../images/images_mobile/captainmarvelheader_Mobile.jpg") no-repeat center  / 100% 100%;
     }
