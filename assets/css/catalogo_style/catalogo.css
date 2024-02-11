@@ -43,7 +43,7 @@ header .banner {
 }
 .card{
     max-width: 390px;
-    height:480px ;
+    /* height:480px ; */
     transition: all 0.3s;
     border-radius: 20px;
     padding: 20px;
