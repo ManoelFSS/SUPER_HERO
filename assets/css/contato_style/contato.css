@@ -82,6 +82,7 @@ form button {
 
     .banner_container_text img {
         display: flex;
+        left: 0;
      }
 
     .form_area{
