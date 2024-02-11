@@ -80,12 +80,15 @@ form button {
 }
 
 @media (max-width:990px){
+    .banner_container_text {
+        min-height:calc(100vh - 100px);
+    }
  
     .banner_container_text img {
         display: flex;
-        height: 150px;
+        height: 120px;
         width: 300px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
      }
 
 }
