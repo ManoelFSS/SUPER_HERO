@@ -1,8 +1,26 @@
 header .banner {
-    background:url("../../images/contatoheader.jpg") no-repeat center  / 100% 100%;
+    background:url("../../images/contatoheader.jpg") no-repeat center  / cover;
     width: 100%;
     height: 100%;
 }
+
+@media (max-width:1280px){
+    .banner_container_text {
+        justify-content: center;
+        height: calc(100vh - 200px);
+        width: 70%;
+
+    }
+    
+    .banner_container_text img {
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+}
+
+
+
 
 .catalogo_title h3::after{
     border-bottom: solid #fc3856;
@@ -82,21 +100,14 @@ form button {
 @media (max-width:990px){
     .banner_container_text {
         min-height:calc(100vh - 100px);
+        padding-bottom: 40px;
     }
- 
-    .banner_container_text img {
-        display: flex;
-        height: 120px;
-        width: 300px;
-        margin-bottom: 20px;
-     }
-
 }
 
 @media (max-width:590px){
 
     header .banner {
-        background:url("../../images/images_mobile/contatoheader_mobile.jpg") no-repeat center  / 100% 100%;
+        background:url("../../images/images_mobile/contatoheader_mobile.jpg") no-repeat center  / cover;
     }
 
     .form_area{
@@ -117,6 +128,7 @@ form button {
 @media (max-width:530px){
     .banner_container_text{
         min-height: calc(100vh - 200px);
+        width: 100%;
     }
     .banner_container_text img {
         max-width: 250px;
